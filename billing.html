@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billing - Clinic Management System</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="appointment.html">Appointments</a></li>
+                <li><a href="records.html">Patient Records</a></li>
+                <li><a href="prescription.html">Prescriptions</a></li>
+                <li><a href="billing.html">Billing</a></li>
+                <li><a href="admin.html">Admin</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="billing">
+            <h1>Billing Information</h1>
+            <div class="billing-info">
+                <h2>Outstanding Invoices</h2>
+                <div id="invoice-list">
+                    <!-- Invoice items will be dynamically generated here -->
+                </div>
+
+                <button id="add-invoice-btn">Add New Invoice</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal for payment confirmation -->
+    <div id="payment-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Payment Confirmation</h2>
+            <p>Are you sure you want to pay <span id="payment-amount"></span> for invoice #<span id="invoice-id"></span>?</p>
+            <button id="confirm-payment-btn">Confirm Payment</button>
+        </div>
+    </div>
+
+    <!-- Form to add a new invoice -->
+    <div id="add-invoice-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Add New Invoice</h2>
+            <form id="invoice-form">
+                <label for="invoice-id">Invoice ID:</label>
+                <input type="text" id="invoice-id-input" name="invoice-id" required>
+
+                <label for="date">Date:</label>
+                <input type="date" id="invoice-date" name="date" required>
+
+                <label for="amount">Amount:</label>
+                <input type="number" id="invoice-amount" name="amount" required>
+
+                <button type="submit">Add Invoice</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 Clinic Management System. All rights reserved.</p>
+    </footer>
+
+    <script src="js/billing.js"></script>
+</body>
+</html>

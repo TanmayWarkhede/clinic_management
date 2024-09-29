@@ -1,0 +1,306 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #007BFF;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.hero img {
+    max-width: 100%;
+    height: auto;
+}
+
+.hero-text {
+    margin-top: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+/* Services Section */
+.services {
+    padding: 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.service-item {
+    display: inline-block;
+    width: 30%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.service-item img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.service-item h3 {
+    margin: 10px 0;
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.testimonial-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.testimonial-item img {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+}
+
+.testimonial-item p {
+    margin: 0;
+    font-style: italic;
+}
+
+/* Appointment Page */
+.appointment {
+    padding: 20px;
+    background-color: #fff;
+}
+
+.appointment form {
+    max-width: 600px;
+    margin: auto;
+}
+
+.appointment label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.appointment input, .appointment textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.appointment button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.appointment button:hover {
+    background-color: #0056b3;
+}
+
+/* Prescription Page */
+.prescriptions {
+    padding: 20px;
+    background-color: #fff;
+}
+
+.prescription-form, .prescription-list {
+    max-width: 600px;
+    margin: auto;
+}
+
+.prescription-form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.prescription-form input, .prescription-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.prescription-form button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.prescription-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Records Page */
+.records {
+    padding: 20px;
+    background-color: #fff;
+}
+
+.search-bar {
+    margin-bottom: 20px;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.record-list {
+    max-width: 600px;
+    margin: auto;
+}
+
+.record-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.record-item img {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+}
+
+.record-details h3 {
+    margin: 0;
+}
+
+.record-details p {
+    margin: 5px 0;
+}
+
+/* Billing Page */
+.billing {
+    padding: 20px;
+    background-color: #fff;
+}
+
+.billing-info {
+    max-width: 600px;
+    margin: auto;
+}
+
+.invoice-item {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.invoice-item p {
+    margin: 0;
+}
+
+.invoice-item button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.invoice-item button:hover {
+    background-color: #0056b3;
+}
+
+/* Admin Page */
+.admin {
+    padding: 20px;
+    background-color: #fff;
+}
+
+.admin-options {
+    text-align: center;
+}
+
+.admin-button {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.admin-button:hover {
+    background-color: #0056b3;
+}

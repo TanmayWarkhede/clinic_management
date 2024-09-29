@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Scheduling - Clinic Management System</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="appointment.html">Appointments</a></li>
+                <li><a href="records.html">Patient Records</a></li>
+                <li><a href="prescription.html">Prescriptions</a></li>
+                <li><a href="billing.html">Billing</a></li>
+                <li><a href="admin.html">Admin</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="appointment">
+            <h1>Schedule an Appointment</h1>
+            <form id="appointmentForm">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="phone">Phone Number</label>
+                <input type="text" id="phone" name="phone" required>
+
+                <label for="date">Choose Date</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="time">Choose Time</label>
+                <input type="time" id="time" name="time" required>
+
+                <label for="reason">Reason for Visit</label>
+                <textarea id="reason" name="reason" required></textarea>
+
+                <button type="submit">Book Appointment</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Clinic Management System. All rights reserved.</p>
+    </footer>
+    <script src="js/appointment.js"></script>
+</body>
+</html>
